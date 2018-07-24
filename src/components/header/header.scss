@@ -1,0 +1,35 @@
+.app-logo {
+  animation: app-logo-appearance 1.6s ease-in;
+  background: white;
+  border-radius: 3px;
+  height: 80px;
+  padding: 15px 0;
+}
+
+.app-header {
+  background-color: #1B4691;
+  color: white;
+  height: 150px;
+  padding: 20px;
+}
+
+@keyframes app-logo-appearance {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

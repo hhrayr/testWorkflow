@@ -1,0 +1,56 @@
+{
+  "workers": [
+    {
+      "id": "1",
+      "label": "Rule 1",
+      "body": "return obj === 1",
+      "param": 1,
+      "true_id": "2_t",
+      "false_id": "2_f"
+    },
+    {
+      "id": "2_t",
+      "label": "Rule 2 true",
+      "body": "var a = obj + 'd'; return a === 'abcd'",
+      "param": "abc",
+      "true_id": "3_t",
+      "false_id": "3_f"
+    },
+    {
+      "id": "2_f",
+      "label": "Rule 2 false",
+      "body": "return obj",
+      "param": false,
+      "true_id": "3_t",
+      "false_id": "3_f"
+    },
+    {
+      "id": "3_t",
+      "label": "Rule 3 true",
+      "body": "return typeof obj === 'number'",
+      "param": "1",
+      "true_id": "4_t",
+      "false_id": "4_f"
+    },
+    {
+      "id": "3_f",
+      "label": "Rule 3 false",
+      "body": "return obj + 1 === 5",
+      "param": 4,
+      "true_id": "4_t",
+      "false_id": "4_f"
+    },
+    {
+      "id": "4_t",
+      "label": "Rule 4 true",
+      "body": "return true",
+      "param": false
+    },
+    {
+      "id": "4_f",
+      "label": "Rule 4 false",
+      "body": "return true",
+      "param": true
+    }
+  ]
+}
